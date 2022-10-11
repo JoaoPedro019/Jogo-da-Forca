@@ -1,0 +1,137 @@
+
+.text {
+  padding: 30px;
+  font-size: 60px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #000;
+  background-image: -webkit-linear-gradient(92deg, rgb(114, 7, 21), red );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+ 
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg); 
+  } to {
+    -webkit-filter: hue-rotate(-360deg);
+   }
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(127, 136, 138);
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .jogo-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .forca {
+    fill: transparent;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 6px;
+    stroke-linecap: round;
+  }
+  
+  .forca-parte {
+    display: none;
+  }
+  
+  .letras-erradas-container {
+    font-size: 20px;
+  }
+  
+  .letras-erradas-container span {
+    margin: 0 4px;
+  }
+  
+  .palavra-secreta-container {
+    font-size: 45px;
+  }
+  
+  .aviso-palavra-repetida {
+    background-color: rgba(28, 18, 18, 0.397);
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: -55px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .aviso-palavra-repetida p {
+    margin: 0;
+  }
+  
+  .aviso-palavra-repetida.show {
+    transform: translateY(-50px);
+  }
+  
+  .palavra-secreta-container span {
+    margin: 0 5px;
+  }
+  
+  .popup-container {
+    background-color: rgba(0, 0, 0, 0.849);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup {
+    background: #325871;
+    border-radius: 5px;
+    box-shadow: 0 10px 5px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .popup button {
+    cursor: pointer;
+    background-color: #fff;
+    border: 0;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  .rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 50px;
+    background: (black);
+    color: rgb(255, 255, 255);
+}
+
+.rodape h3{
+    font-size: 20px;
+}
+
+.icons ion-icons {
+  align-items: center;
+    width: 25px;
+    height: 25px;
+    color: var(black);
+}
+
+.icons ion-icons:hover {
+    color: var(black);
+}
+  
